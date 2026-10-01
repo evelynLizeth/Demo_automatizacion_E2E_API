@@ -1,0 +1,12 @@
+# Dependencias de Node.js
+node_modules/
+
+# Archivos de reportes y screenshots/videos automáticos de Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Archivos del sistema operativo o editores
+.DS_Store
+Thumbs.db
+.vscode/
