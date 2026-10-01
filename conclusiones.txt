@@ -1,0 +1,22 @@
+===================================================
+ CONCLUSIONES DEL PROYECTO DE AUTOMATIZACIÓN
+===================================================
+
+ 1. Eficiencia y Cobertura:
+ La automatización de pruebas mediante Cypress permite validar tanto los flujos 
+ de interfaz de usuario (E2E en SauceDemo) como la lógica del backend y servicios 
+ web (API REST en PetStore) en cuestión de segundos, reduciendo drásticamente el 
+ tiempo invertido en pruebas manuales repetitivas.
+
+ 2. Importancia de las Pruebas de API:
+ Validar los métodos HTTP (POST, GET, PUT) directamente sobre endpoints asegura 
+ que la integridad de los datos, los códigos de estado (como 200 OK) y las respuestas 
+ en formato JSON funcionen de manera óptima antes de depender de la interfaz gráfica, 
+ facilitando la detección temprana de errores de integración.
+
+ 3. Mantenibilidad y Buenas Prácticas:
+ El uso de un control de versiones adecuado (Git/GitHub) junto con una correcta 
+ configuración del archivo `.gitignore` (excluyendo carpetas pesadas como `node_modules` 
+ y reportes locales de Cypress) garantiza que el código sea limpio, ligero, colaborativo 
+ y fácil de replicar por cualquier miembro del equipo o evaluador.
+===================================================
