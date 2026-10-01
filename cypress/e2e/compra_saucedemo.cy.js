@@ -18,15 +18,16 @@ describe('Flujo de Compra E2E - SauceDemo', () => {
     cy.url().should('include', '/cart.html');
 
     // 5. Ir al checkout y completar el formulario de compra
+    // 5. Ir al checkout y completar el formulario de compra
     cy.get('[data-test="checkout"]').click();
-    cy.get('[data-test="firstName"]').type('Evelyn');
-    cy.get('[data-test="lastName"]').type('Zambrano');
-    cy.get('[data-test="postalCode"]').type('170150');
+    cy.get('[data-test="firstName"]').clear().type('Evelyn');
+    cy.get('[data-test="lastName"]').clear().type('Zambrano');
+    cy.get('[data-test="postalCode"]').clear().type('170150');
     cy.get('[data-test="continue"]').click();
 
     // 6. Finalizar la compra y verificar el mensaje de confirmación
     cy.get('[data-test="finish"]').click();
-    cy.get('.complete-header').should('have.text', 'THANK YOU FOR YOUR ORDER'); 
+    cy.get('.complete-header').should('have.text', 'Thank you for your order!');
    
   });
 });
