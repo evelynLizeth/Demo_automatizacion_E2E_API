@@ -1,20 +1,34 @@
 ===================================================
- CONCLUSIONES DEL PROYECTO DE AUTOMATIZACIÓN
+ CONCLUSIONES DEL PROYECTO DE AUTOMATIZACIÓN QA
 ===================================================
 
- 1. Eficiencia y Cobertura:
- La automatización de pruebas mediante Cypress permite validar tanto los flujos 
- de interfaz de usuario (E2E en SauceDemo) como la lógica del backend y servicios 
- web (API REST en PetStore) en cuestión de segundos, reduciendo drásticamente el 
- tiempo invertido en pruebas manuales repetitivas.
+1. RESUMEN 
+La ejecución de la suite de pruebas automatizadas sobre los escenarios E2E y 
+servicios API ha finalizado con éxito total (100% de casos en verde). La 
+implementación demuestra que los flujos críticos de negocio operan bajo los 
+estándares esperados de calidad y estabilidad.
 
- 2. Importancia de las Pruebas de API:
+2. BENEFICIOS Y LOGROS DE LA AUTOMATIZACIÓN
+- La automatización de pruebas mediante Cypress permite validar tanto los flujos 
+  de interfaz de usuario (E2E en SauceDemo) como la lógica del backend y servicios 
+  web (API REST en PetStore) en cuestión de segundos, reduciendo drásticamente el 
+  tiempo invertido en pruebas manuales repetitivas.
+- Independencia y repetibilidad de las pruebas mediante scripts estructurados 
+  y limpios bajo Node.js y Cypress.
+
+ 3. IMPORTANCIA DE PRUEBAS API:
  Validar los métodos HTTP (POST, GET, PUT) directamente sobre endpoints asegura 
  que la integridad de los datos, los códigos de estado (como 200 OK) y las respuestas 
  en formato JSON funcionen de manera óptima antes de depender de la interfaz gráfica, 
  facilitando la detección temprana de errores de integración.
 
- 3. Mantenibilidad y Buenas Prácticas:
+ 4. RECOMENDACIONES DE MEJORA CONTINUA
+- Integrar la ejecución de esta suite dentro de un pipeline de Integración Continua 
+  (CI/CD) utilizando GitHub Actions para automatizar las validaciones en cada commit.
+- Ampliar la matriz de pruebas para incluir casos negativos (manejo de errores, 
+  credenciales inválidas, campos obligatorios vacíos y fallas controladas de red).
+
+ 5. MANTENIBILIDAD Y BUENAS PRÁCTICAS:
  El uso de un control de versiones adecuado (Git/GitHub) junto con una correcta 
  configuración del archivo `.gitignore` (excluyendo carpetas pesadas como `node_modules` 
  y reportes locales de Cypress) garantiza que el código sea limpio, ligero, colaborativo 
